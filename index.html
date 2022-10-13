@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/assets/favicon/palanca-de-mando.png" type="image/x-icon">
+    <title>GameStore</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">GameStore</h1>
+        <nav>
+            <a href="#titulo">Inicio</a>
+            <a href="#seccion-productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button id="boton-carrito"><!-- <i class="fas fa-shopping-cart"></i> --> <img src="/assets/carrito-de-compras.png" alt=""></button>
+        
+    </header>
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta"><img src="/assets/fifa_22_baner.jpg" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta"><img src="/assets/Banner_Series_S.jpg" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta"><img src="/assets/Cyberpunk-Banner (1).jpg" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
+        </div>
+    </div>
+
+    <h2 id="seccion-productos">¿Listo para jugar?</h2>
+    <main id="contenedor-productos">
+        
+        <!-- aqui van los productos pintados-->
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button class="boton-agregar">Comprar articulos</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="contacto">
+            <h3>Contacto</h3>
+            <p>tel: +54 9 341-1524412</p>
+            <p>correo: alan@gmail.com</p> 
+        </div>
+        <div id="redes">
+            <a href="#"><img src="/assets/iconos redes/facebook-icon.png" alt="facebook-icon"></a>
+            <a href="#"><img src="/assets/iconos redes/instagram.icon.png" alt="instagram-icon">
+            </a>
+            <a href="#"><img src="/assets/iconos redes/twitter-icon.png" alt="twitter-icon"></a>
+            <a href="#"><img src="/assets/iconos redes/youtube-icon.png" alt="youtube-icon"></a>
+        </div>
+        
+    </footer>
+</body>
+<script src="stock.js"></script>
+<script src="modal.js"></script>
+<script src="app.js"></script>
+</html>
